@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Libs CSS -->
+    <link href="../fonts/feather/feather.css" rel="stylesheet">
+    <link href="../libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="../libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../css/theme.min.css">
+    <title>Temperaturas</title>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+        <!-- navbar vertical -->
+        <!-- Sidebar -->
+        <nav class="navbar-vertical navbar">
+            <div class="vh-100" data-simplebar>
+                <!-- Brand logo -->
+                <a class="navbar-brand" href="../../../index.html">
+                    <img src="../../../assets/images/brand/logo/logo-inverse.svg" alt="">
+                </a>
+                <!-- Navbar nav -->
+                <ul class="navbar-nav flex-column" id="sideNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">
+                            <i class="nav-icon mdi mdi-home-thermometer-outline me-2"></i>
+                            Temperaturas
+                        </a>
+                        <a class="nav-link " href="notificacionesIndex.html">
+                            <i class="nav-icon mdi mdi-bell me-2"></i>
+                            Notificaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <main id="page-content">
+            <div class="header">
+                <!-- navbar -->
+                <nav class="navbar-default navbar navbar-expand-lg">
+                    <a id="nav-toggle" href="#">
+                        <i class="fe fe-menu"></i>
+                    </a>
+                    <div class="ms-lg-3 d-none d-md-none d-lg-block">
+                    </div>
+                </nav>
+            </div>
+            <!-- Container fluid -->
+            <section class="container-fluid p-4">
+                <div class="row ">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                            <div>
+                                <div class="tab-content" id="tabContent">
+                                    <!-- Tab -->
+                                    <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                        aria-labelledby="all-tab">
+                                        <div class="table-responsive border-0">
+                                            <h1>Monitoreo de Temperaturas</h1>
+                                            <h3>Selecciona un invernadero</h3>
+                                            <select id="seleccionInvernadero">
+                                              <option value=""></option>
+                                            </select>
+                                            <h3>Selecciona un sensor</h3>
+                                            <select id="seleccionSensor">
+                                              <option value=""></option>
+                                            </select>
+                                            <br><br>
+                                            <div id="temperatura">Temperatura actual: °C</div>
+                                            <div id="humedad">Humedad actual: %</div>
+                                            <div id="Promtemperatura">Promedio de temperatura actual: °C</div>
+                                            <div id="Promhumedad">Promedio de humedad actual: %</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+    </div>
+    </section>
+    </main>
+
+    </div>
+    
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../libs/simplebar/dist/simplebar.min.js"></script>
+
+
+    <!-- Theme JS -->
+    <script src="../assets/theme.min.js"></script>
+    <script src="../javascript/obtenerTemperatura.js"></script>
+</body>
+
+</html>
